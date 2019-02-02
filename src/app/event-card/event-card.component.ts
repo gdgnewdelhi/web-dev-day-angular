@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { EventModel } from '../models/event';
 
 @Component({
@@ -8,10 +8,12 @@ import { EventModel } from '../models/event';
 })
 export class EventCardComponent implements OnInit {
 
-  event: EventModel = {
-    title: 'Web Dev Days - 1',
-    description: 'First event of the series: Web Dev Days'
-  };
+  // event: EventModel = {
+  //   title: 'Web Dev Days - 1',
+  //   description: 'First event of the series: Web Dev Days'
+  // };
+
+  @Input() event: EventModel;
 
   constructor() { }
 
