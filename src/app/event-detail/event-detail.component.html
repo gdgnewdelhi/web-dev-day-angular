@@ -1,5 +1,21 @@
 <div id="container">
   <div id="event-detail" *ngIf="event">
     <app-event-card [event]="event"></app-event-card>
+    <div id="registration-form">
+      <span id="heading">Register for {{ event.title }}</span>
+      <div id="form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" placeholder="Enter your name"/>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" placeholder="Enter your email"/>
+        </div>
+        <div>
+          <button>Register</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

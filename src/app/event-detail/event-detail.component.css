@@ -1,3 +1,40 @@
 #container{
     padding: 16px;
+    background-color: #ededed;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#registration-form{
+    padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    margin: 8px;
+}
+
+#heading{
+    font-size: 18px;
+}
+
+#form{
+    margin-top: 16px;
+}
+
+.field {
+    margin-top: 8px;
+}
+
+label{
+    font-size: 14px;
+    color: #8e8e8e;
+    margin-right: 16px;
+}
+
+input{
+    padding: 8px;
+}
+
+button{
+    padding: 8px 16px;
+    margin-top: 16px;
 }
