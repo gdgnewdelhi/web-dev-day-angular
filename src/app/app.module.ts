@@ -8,6 +8,7 @@ import { ContentComponent } from './content/content.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { EventsComponent } from './events/events.component';
+import { EventCardComponent } from './event-card/event-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EventsComponent } from './events/events.component';
     ContentComponent,
     HomeComponent,
     AboutComponent,
-    EventsComponent
+    EventsComponent,
+    EventCardComponent
   ],
   imports: [
     BrowserModule,
