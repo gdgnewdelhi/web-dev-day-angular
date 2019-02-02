@@ -13,6 +13,9 @@ export class EventDetailComponent implements OnInit {
   eventId: string;
   event: EventModel;
 
+  userName: string;
+  userString: string;
+
   constructor(private route: ActivatedRoute, private http: HttpClient) { }
 
   ngOnInit() {

@@ -6,15 +6,19 @@
       <div id="form">
         <div class="field">
           <label for="name">Name</label>
-          <input id="name" placeholder="Enter your name"/>
+          <input id="name" placeholder="Enter your name" [(ngModel)]="userName"/>
         </div>
         <div class="field">
           <label for="email">Email</label>
-          <input id="email" placeholder="Enter your email"/>
+          <input id="email" placeholder="Enter your email" [(ngModel)]="userEmail"/>
         </div>
         <div>
           <button>Register</button>
         </div>
+        <p id="message">
+          <span *ngIf="userName">We will create a registration for {{userName}}</span>
+          <span *ngIf="userEmail">and a confirmation will be sent on {{userEmail}}</span>
+        </p>
       </div>
     </div>
   </div>
