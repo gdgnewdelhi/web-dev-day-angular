@@ -1,3 +1,5 @@
-<p>
-  Event Id: {{ eventId }}
-</p>
+<div id="container">
+  <div id="event-detail" *ngIf="event">
+    <app-event-card [event]="event"></app-event-card>
+  </div>
+</div>
