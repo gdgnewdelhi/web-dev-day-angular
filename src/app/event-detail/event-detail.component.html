@@ -13,7 +13,7 @@
           <input id="email" placeholder="Enter your email" [(ngModel)]="userEmail"/>
         </div>
         <div>
-          <button>Register</button>
+          <button (click)="register()">Register</button>
         </div>
         <p id="message">
           <span *ngIf="userName">We will create a registration for {{userName}}</span>
