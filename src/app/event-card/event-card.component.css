@@ -3,6 +3,7 @@
     transition: 0.3s;
     margin: 8px;
     background-color: white;
+    cursor: pointer;
 }
   
 .card:hover {

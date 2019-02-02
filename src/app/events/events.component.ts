@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EventModel } from '../models/event';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-events',
@@ -24,12 +25,16 @@ export class EventsComponent implements OnInit {
     // }
   ];
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient, private router: Router) { }
 
   ngOnInit() {
     this.httpClient.get<EventModel[]>('http://localhost:8000/api/events').subscribe(response => {
       this.events = response;
     });
+  }
+
+  onEventClick(event: EventModel) {
+    this.router.navigate(['/events', event._id]);
   }
 
 }

@@ -6,6 +6,6 @@
         <p>List of upcoming events.</p>
   </div>
   <div id="events-container">
-    <app-event-card *ngFor="let currentEvent of events" [event]="currentEvent"></app-event-card>
+    <app-event-card *ngFor="let currentEvent of events" [event]="currentEvent" (click)="onEventClick(currentEvent)"></app-event-card>
   </div>
 </div>
