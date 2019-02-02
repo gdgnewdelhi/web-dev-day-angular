@@ -23,3 +23,16 @@
     margin-top: 16px
 }
 
+.event-footer {
+    margin-top: 8px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    color: #8e8e8e;
+}
+
+#event-registrations{
+    flex: 1;
+    font-size: 14px;
+}
+
