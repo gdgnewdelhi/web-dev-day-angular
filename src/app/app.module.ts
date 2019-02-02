@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { EventsComponent } from './events/events.component';
 import { EventCardComponent } from './event-card/event-card.component';
+import { EventDetailComponent } from './event-detail/event-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EventCardComponent } from './event-card/event-card.component';
     HomeComponent,
     AboutComponent,
     EventsComponent,
-    EventCardComponent
+    EventCardComponent,
+    EventDetailComponent
   ],
   imports: [
     BrowserModule,
