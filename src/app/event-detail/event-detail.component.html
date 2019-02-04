@@ -1,0 +1,25 @@
+<div id="container">
+  <div id="event-detail" *ngIf="event">
+    <app-event-card [event]="event"></app-event-card>
+    <div id="registration-form">
+      <span id="heading">Register for {{ event.title }}</span>
+      <div id="form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" placeholder="Enter your name" [(ngModel)]="userName"/>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" placeholder="Enter your email" [(ngModel)]="userEmail"/>
+        </div>
+        <div>
+          <button (click)="register()">Register</button>
+        </div>
+        <p id="message">
+          <span *ngIf="userName">We will create a registration for {{userName}}</span>
+          <span *ngIf="userEmail">and a confirmation will be sent on {{userEmail}}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

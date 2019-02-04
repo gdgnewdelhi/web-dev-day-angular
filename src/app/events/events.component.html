@@ -1,0 +1,11 @@
+<div id="container">
+  <div id="top-content">
+      <h3>
+          Events Page
+        </h3>
+        <p>List of upcoming events.</p>
+  </div>
+  <div id="events-container">
+    <app-event-card *ngFor="let currentEvent of events" [event]="currentEvent" (click)="onEventClick(currentEvent)"></app-event-card>
+  </div>
+</div>
